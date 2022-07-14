@@ -1,0 +1,8 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "processing-experimental.jar",
+        "c:\\Users\\chris\\localCPE\\JUnit\\hamcrest-core-1.3.jar",
+        "c:\\Users\\chris\\localCPE\\JUnit\\junit-4.13.2.jar"
+    ]
+}

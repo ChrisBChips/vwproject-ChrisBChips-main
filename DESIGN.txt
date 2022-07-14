@@ -1,0 +1,43 @@
+Regrade Changes:
+Added getters/setters to UML
+Made WorldModel variables private
+Split getCurrentImage to getCurrentBackgroundImage and getCurrentEntityImage, updated in UML
+
+
+
+
+
+
+
+
+addEntity could have gone in Entity or WorldModel
+1) I selected WorldModel
+2) I thought it would be more readable to call it on the world model due to the name "addEntity"
+
+unscheduleAllEvents could go in EventScheduler or Entity
+1) I selected EventScheduler
+2) It made more sense with the other functions in EventScheduler 
+
+load could go in WorldModel or ImageStore
+1) I selected ImageStore
+2) I also put processLine in there and since load calls processLine, it would be more efficient to have them together
+
+tryAddEntity could go in WorldModel or Entity
+1) I selected Worldmodel
+2) I feel like there are enough methods in Entity
+
+moveEntity could go in WorldModel or Entity
+1) I selected Worldmodel
+2) I feel like there are enough methods in Entity
+
+removeEntity could go in WorldModel or Entity
+1) I selected Worldmodel
+2) I feel like there are enough methods in Entity
+
+removeEntityAt could go in WorldModel or Entity
+1) I selected Worldmodel
+2) I feel like there are enough methods in Entity
+
+Parce Functions could go in WorldModel, ImageStore, or stay in Functions
+1) I'm keeping them in Functions
+2) It calls other independant functions that will be staying in Functions

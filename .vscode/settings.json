@@ -1,0 +1,9 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "processing-experimental.jar"
+    ],
+    "java.project.sourcePaths": [
+        "src"
+    ]
+}

@@ -1,0 +1,18 @@
+How to trigger: Click anywhere in bounds.
+
+What should happen: A 5x5 grid centered at the mouse click is affected. 
+All background tiles change to a gray floor texture, any Miners (Full or Not Full) 
+should have visors places over their faces, and an Among Us crewmate dancing should
+appear at the location of the mouse click. The crewmate replaces any entity already there.
+
+What affected Entities do: Only Miners are affected, and the new ones should chase after
+OreBlobs instead of Ore. When they get to the OreBlob, they stop. Their goal is to trap
+the OreBlobs with their bodies. Modified Miners are called "Buffed" in the code.
+
+What the new entity is/does: The new Entity is an orange crewmate from Among Us
+(Called Amogus in the code). It walks around using the same A* pathing targeting OreBlobs.
+When it gets to one, it destroys the OreBlob then moves on to the next one. It can pass
+through buffed Miners, destroying them (They were imposters). 
+It intentionally moves slightly slower than all other Miners
+
+I worked on this solo.
